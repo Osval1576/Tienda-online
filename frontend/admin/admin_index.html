@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Administrador</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .admin-login {
+            max-width: 400px;
+            margin: 80px auto;
+            background-color: #2D4263;
+            padding: 30px;
+            border-radius: 20px;
+            font-family: 'Space Grotesk', sans-serif;
+            color: white;
+        }
+        .admin-login h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .admin-login input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 10px;
+            border: none;
+        }
+        .admin-login button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 12px;
+            background-color: #263143;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .admin-login button:hover {
+            background-color: white;
+            color: black;
+        }
+    </style>
+    <a href="../usuario/index.html"><h1>Shopping Car</h1></a>
+
+</head>
+<body>
+    <form class="admin-login" id="formAdmin">
+        <h2>Ingreso de Administrador</h2>
+        <input type="text" id="usuario" placeholder="Usuario" required>
+        <input type="password" id="contrasena" placeholder="Contraseña" required>
+        <button type="submit">Ingresar</button>
+    </form>
+
+    <script>
+        const usuarioCorrecto = "admin";
+        const contrasenaCorrecta = "1234";
+
+        document.getElementById("formAdmin").addEventListener("submit", function(e) {
+            e.preventDefault();
+            const usuario = document.getElementById("usuario").value;
+            const contrasena = document.getElementById("contrasena").value;
+
+            if (usuario === usuarioCorrecto && contrasena === contrasenaCorrecta) {
+                localStorage.setItem("adminActivo", "true");
+                window.location.href = "admin.html";
+            } else {
+                alert("Credenciales incorrectas.");
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Carrito de compras</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header id="header">
+       
+    <a href="../usuario/index.html"><h1>Shopping Car</h1></a>
+
+    <div class="icon-bar">
+        <img id="admin" class="icono" src="https://cdn-icons-png.flaticon.com/512/7542/7542163.png" alt="Admin" title="Admin">
+        <img id="registrarUsuario" class="icono" src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Registrar Usuario" title="Registrar">
+        <img id="perfil" class="icono" src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" alt="Perfil" title="Perfil">
+        <div class="carrito-wrapper">
+            <img id="carrito" class="icono" src="/img/carrito-de-compras.png" alt="Carrito" title="Carrito">
+            <div id="numero" class="diseñoNumero"></div>
+        </div>
+    </div>
+</header>
+
+
+
+    
+    <main>
+        <div id="contenedor" class="contenedor"> </div>
+    </main>
+    <!-- Contenedor de perfil -->
+<div id="contenedorPerfil" class="none">
+    <div class="informacionCompra perfilBox" id="informacionPerfil">
+        <h2>Perfil</h2>
+        <p class="x" id="cerrarPerfil">x</p>
+        <div class="contenidoPerfil" id="datosPerfil"></div>
+        <div class="accionesPerfil">
+            <button id="editarPerfil">Editar Perfil</button>
+            <button id="cerrarSesion">Cerrar Sesión</button>
+        </div>
+    </div>
+</div>
+
+    
+    <div id="contenedorCompra">
+        <div class="informacionCompra" id="informacionCompra">
+            <h2>Cesta</h2>
+            <p class="x" id="x">x</p>
+        </div>
+
+        <div class="productosCompra" id="productosCompra"></div>
+        <div class="total" id="total"></div>
+        <button onclick="finalizarCompra()">Finalizar Compra</button>
+    </div>
+    
+
+<script src="main_index_backend.js"></script>
+</body>
+
+</html>
