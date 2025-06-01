@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
             telefono
         };
 
-        fetch("http://localhost:5000/api/usuarios/registro", {
+        fetch("https://18.191.184.146:5000/api/usuarios/registro", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

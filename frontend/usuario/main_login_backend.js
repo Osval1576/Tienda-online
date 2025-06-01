@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const correo = document.getElementById("correo").value;
         const clave = document.getElementById("clave").value;
 
-        fetch("http://localhost:5000/api/usuarios/login", {
+        fetch("https://18.191.184.146:5000/api/usuarios/login", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ correo, clave })

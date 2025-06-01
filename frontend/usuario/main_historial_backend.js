@@ -1,6 +1,7 @@
 
 document.addEventListener("DOMContentLoaded", () => {
-    const API = "http://localhost:5000";
+    //const API = "http://localhost:5000";
+    const API = "https://18.191.184.146:5000";
     const usuario = JSON.parse(localStorage.getItem("usuario"));
 
     if (!usuario) {

@@ -1,6 +1,8 @@
 
 document.addEventListener("DOMContentLoaded", () => {
-    const API = "http://127.0.0.1:5000";
+    const API = "https://18.191.184.146:5000";
+
+   // const API = "http://127.0.0.1:5000";
     const contenedor = document.getElementById("contenedor");
     const numero = document.getElementById("numero");
 
